@@ -8,7 +8,7 @@ def get_days_from_today(date)-> int:
         set_date = datetime.strptime(date,"%Y.%m.%d").date()
         #Оримуємо дату сьогодні
         today = datetime.today().date()
-        #Повертаэмо результат
+        #Повертаємо результат
         return (today - set_date).days
     except ValueError:
         print('Error неправильний формат дати. Введіть у форматі: "YYYY-MM-DD"!')
