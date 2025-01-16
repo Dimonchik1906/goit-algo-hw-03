@@ -15,9 +15,10 @@ def get_numbers_ticket(min,max,quantity) -> int:
             return None
     except TypeError or ValueError:
         print("Введені не правильні аргументи")
-        return None
+        lottery_numbers = ''
+        return lottery_numbers
         # Повернення відсортованого списку
     return sorted(lottery_numbers)
 
-lottery_numbers = get_numbers_ticket(1, 49, 6)
+lottery_numbers = get_numbers_ticket(1, 1100, 6)
 print("Ваші лотерейні числа:", lottery_numbers)
