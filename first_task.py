@@ -5,7 +5,7 @@ def get_days_from_today(date)-> int:
     #Тестуємо правильність вводу, в разі не правильного вводу результат None
     try:
         #Перетворюємо date з string в datetime 
-        set_date = datetime.strptime(date,"%Y.%m.%d").date()
+        set_date = datetime.strptime(date,"%Y-%m-%d").date()
         #Оримуємо дату сьогодні
         today = datetime.today().date()
         #Повертаємо результат
@@ -15,4 +15,4 @@ def get_days_from_today(date)-> int:
         return None
 
 #Тест   
-print(get_days_from_today("2025.01.01"))    
+print(get_days_from_today("2025-01-01"))    
