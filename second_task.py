@@ -12,11 +12,11 @@ def get_numbers_ticket(min,max,quantity) -> int:
                 lottery_numbers.add(random.randint(min, max))
         else: 
             print("Ви ввели не правильні числа. Повинно бути від 1 до 1000 та кількість в цьому діапазоні")
-            lottery_numbers = ''
+            lottery_numbers = []
             return lottery_numbers
     except TypeError or ValueError:
         print("Введені не правильні аргументи")
-        lottery_numbers = ''
+        lottery_numbers = []
         return lottery_numbers
         # Повернення відсортованого списку
     return sorted(lottery_numbers)
